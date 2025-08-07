@@ -84,3 +84,5 @@ DESCRIBE MATERIALIZED VIEW tasty_bytes.harmonized.brand_names_materialized;
 
 ---> drop the materialized view
 DROP MATERIALIZED VIEW tasty_bytes.harmonized.brand_names_materialized;
+
+/**/

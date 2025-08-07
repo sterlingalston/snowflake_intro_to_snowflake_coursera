@@ -301,4 +301,6 @@ SELECT file_name, error_count, status, last_load_time FROM snowflake.account_usa
   /*stage types
   @
   @% table
-  @~ user*/
+  @~ user*
+  
+  ACCOUNT_USAGE.COPY_HISTORY()/
