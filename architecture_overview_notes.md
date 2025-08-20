@@ -1,6 +1,6 @@
 # Snowflake Architecture Overview
 
-###
+### Core Objects and Architecture
 
 Architecture Layers
 
@@ -8,11 +8,9 @@ Architecture Layers
 
 #### Optimized Storage
 
-
 ![](assets\20250817_191307_optimized_storage_layer.png)
 
 #### Elastic Multi-Cluster Compute
-
 
 ![](assets\20250817_191526_elastic_multi-cluster_compute.png)
 
@@ -24,3 +22,15 @@ Architecture Layers
 
 ![snowgrid.png](./2b3cb9e03f863bacd62c8a3866cc3422.png "snowgrid.png")
 
+### Time Travel
+
+* UNDROP and SHOW TABLES uses timetravel
+* AT,BEFORE (TIMESTAMPE=>, STATEMENT=>)
+
+### Permanent, Transient, and Temporary Tables
+
+### Cloning
+
+- cloning can be combined with time travel
+
+`---> clone a table based on an offset (so the table as it was at a certain interval in the past)  CREATE OR REPLACE TABLE tasty_bytes.raw_pos.truck_clone_time_travel  CLONE tasty_bytes.raw_pos.truck AT(OFFSET => -60*10); `
