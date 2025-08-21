@@ -35,10 +35,7 @@ Architecture Layers
 
 `---> clone a table based on an offset (so the table as it was at a certain interval in the past)  CREATE OR REPLACE TABLE tasty_bytes.raw_pos.truck_clone_time_travel  CLONE tasty_bytes.raw_pos.truck AT(OFFSET => -60*10); `
 
-
-
 ### Resource Monitoring
-
 
 - *account-level monitor* - total credit consumption over all resources in account
 - *warehouse-level* - total credit consumption for a particular warehouse
@@ -47,3 +44,16 @@ Architecture Layers
 
   ![](assets\20250820_192427_image.png)
 -
+
+### User-Defined Functions (UDFs) - Part I/II
+
+
+![](assets\20250821_143706_image.png)
+
+- '$$' are called bookends
+
+
+### User-Defined Table Functions (UDTFs)
+
+- cannot have Scala UTFS
+  - can have JavaScript, Python, Java, and SQL
