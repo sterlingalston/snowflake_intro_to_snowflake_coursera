@@ -47,13 +47,33 @@ Architecture Layers
 
 ### User-Defined Functions (UDFs) - Part I/II
 
-
 ![](assets\20250821_143706_image.png)
 
 - '$$' are called bookends
-
 
 ### User-Defined Table Functions (UDTFs)
 
 - cannot have Scala UTFS
   - can have JavaScript, Python, Java, and SQL
+
+### Role-based Access Control
+
+automatically generated roles
+
+![](assets\20250821_164459_image.png)
+
+- SHOW GRANTS TO ROLE {name of role}
+
+  ![](assets\20250821_164606_image.png)
+- ACCOUNTADMIN has access to Security Admin Role < User Admin role
+- One, we learned about securable objects,   roles, privileges, and users.   Two, we learned about   the system defined roles, Org Admin,   account Admin, Security Admin,   user Admin, Sys Admin, public.   Three, we learned how to assume a role.   Four, we learned how to create a new role.   F, we learned how to grant privileges to a role.   Six, we learned how to show   what privileges a role has been granted,   and seven, we learned how to grant a role to a user.   That's a lot of stuff.   We're not quite Arbach black belts,   but we're probably at least Arbach blue belts   or something. Great job.
+
+### Snowpark Dataframes
+
+- library to help transform data
+- Python/Java/Scala
+- lazy-execution
+  - df.show() will not execute until explicitly asked
+- saving results to table
+  -  ![](assets\20250822_162000_image.png)
+  -
