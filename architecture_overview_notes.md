@@ -45,6 +45,8 @@ Architecture Layers
   ![](assets\20250820_192427_image.png)
 -
 
+[resource_monitors.sql](.\resource_monitors.sql)
+
 ### User-Defined Functions (UDFs) - Part I/II
 
 ![](assets\20250821_143706_image.png)
@@ -76,21 +78,17 @@ automatically generated roles
   - df.show() will not execute until explicitly asked
 - saving results to table
 
-
 ### Snowflake Data Engineering
-
 
 ![](assets\20250823_174903_image.png)
 
 ### Ingestion
-
 
 ![](assets\20250823_175717_image.png)
 
 ### Transformation, Orchestration, and Observability
 
 #### Transformation
-
 
 ![](assets\20250823_175949_image.png)
 
@@ -99,4 +97,71 @@ automatically generated roles
 - streams - created on a table and keeps track of changes on table
 - tasks - actions on scheduled basis
 - ![](assets\20250823_180134_image.png)
--  ![](assets\20250823_180526_image.png)
+- ![](assets\20250823_180526_image.png)
+-
+
+#### Observability
+
+-![](assets\20250823_180850_image.png)
+
+#### Snowpipe Part I
+
+#### steps to create IAM and external storage
+
+![](assets\20250823_224354_image.png)
+
+![](assets\20250823_224417_image.png)
+
+![](assets\20250823_224305_image.png)
+
+![](assets\20250823_224543_image.png)
+
+![](assets\20250823_224601_image.png)
+
+![](assets\20250823_224636_image.png)
+
+![](assets\20250823_224748_image.png)
+
+![](assets\20250823_224846_image.png)
+
+![](assets\20250823_224910_image.png)
+
+### Snowflake GenAI - Part I and II
+
+![](assets\20250823_232007_image.png)
+
+- document A.I. let's you use SF LLM to extract data using cortex
+- ![](assets\20250823_232133_image.png)
+- universal search lets you use natural language to search for anything within SF acct.
+- ![](assets\20250823_232230_image.png)
+- snowflake copilot generates SQL from natural language
+- ![](assets\20250823_232310_image.png)
+- streamlit is not a GenAI application, but cortex can be embedded
+- #### cortex
+- ![](assets\20250823_232641_image.png)
+-
+
+Later, we'll see that Snowflake Cortex's ML functions operate very similarly, except that under the hood they're powered by ML models instead of by GenAI ones.
+
+SPCS - Snowpark Container Services
+
+- code added to image
+- image generates container and runs within snowflake system
+- bring code to data and keep data in snowflake
+
+### Cortex
+
+- LLMs convert input to tokens and convert back to original language
+  - cost of using complete can vary
+  - larger charge more per token and smaller charge less
+  - can specify max token size, which limits size of the response
+
+### ML Overview
+
+- ![](assets\20250824_141405_image.png)
+- ML Functions in Snowflake
+- ![](assets\20250824_141617_image.png)
+- snowpark has scikit-learn, xgboost library equivalents
+- ![](assets\20250824_142256_image.png)
+- SF model registry helps with model management for version artifacts and metadata
+-
