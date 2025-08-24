@@ -75,5 +75,28 @@ automatically generated roles
 - lazy-execution
   - df.show() will not execute until explicitly asked
 - saving results to table
-  -  ![](assets\20250822_162000_image.png)
-  -
+
+
+### Snowflake Data Engineering
+
+
+![](assets\20250823_174903_image.png)
+
+### Ingestion
+
+
+![](assets\20250823_175717_image.png)
+
+### Transformation, Orchestration, and Observability
+
+#### Transformation
+
+
+![](assets\20250823_175949_image.png)
+
+#### Orchestration
+
+- streams - created on a table and keeps track of changes on table
+- tasks - actions on scheduled basis
+- ![](assets\20250823_180134_image.png)
+-  ![](assets\20250823_180526_image.png)
